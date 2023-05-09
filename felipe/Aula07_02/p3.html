@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+    <link rel="stylesheet" href="css.css">
+    <title>DW2</title>
+    <style>
+        h1 {
+            padding-top: 5%;
+            padding-bottom: 2%;
+            font-size: 50px;
+            text-align: center;
+            font-family: 'Audiowide';
+        }
+
+        tr:hover {
+            background-color: rgb(207, 218, 204);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="p1.html">Início</a> </li>
+            <li><a href="p2.html">Busca</a> </li>
+            <li><a href="p3.html">Formulario</a> </li>
+            <li><a href="p4.html">Post</a> </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Formulario de Cadastro e Tabela com dados</h1>
+
+        <div class="row">
+            <div class="col-sm-5">
+
+                <form>
+                    <div class="row mb-2">
+                        <label for="nome" class="col-sm-2 col-form-label">Nome:</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" id="nome" type="text" />
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <label for="tel" class="col-sm-2 col-form-label">Telefone:</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" id="tel" type="tel" placeholder="(99)99999-9999" />
+                        </div>
+
+                    </div>
+
+                    <div class="row mb-2">
+                        <label for="email" class="col-sm-2 col-form-label">Email:</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" id="email" type="email" placeholder="SeuEmail@email.com" />
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <label for="estado" class="col-sm-2 col-form-label">Estado:</label>
+                        <div class="col-sm-10">
+                            <select id="estado" name="estado">
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                                <option value="EX">Estrangeiro</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-12 text-center">
+                        <button id="gravar" type="submit" class="btn btn-primary">Gravar</button>
+                    </div>
+                    <div class="col-xl-12 text-center">
+                        <button id="resetar" type="reset" class="btn btn-warning">Limpar</button>
+                    </div>
+            </div>
+            </form>
+
+            <div class="col-sm">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr class="table-dark">
+                            <th scope="col" style="width:30%;">Nome</th>
+                            <th scope="col" style="width:25%;">Email</th>
+                            <th scope="col" style="width:20%;">Telefone</th>
+                            <th scope="col" style="width:25%;">Estado</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <th scope="col" style="width:30%;">Daiane Luz</th>
+                        <th scope="col" style="width:25%;">daiane_daluz@xmail.com.br</th>
+                        <th scope="col" style="width:20%;">(81)98500-3991</th>
+                        <th scope="col" style="width:25%;">Roraima</th>
+                    </tr>
+                    <tr>
+                        <th scope="col" style="width:30%;">Raimunda Joana</th>
+                        <th scope="col" style="width:25%;">raimunda_joana_moura@uni.com.br</th>
+                        <th scope="col" style="width:20%;">(81)3516-7956</th>
+                        <th scope="col" style="width:25%;">Goiás</th>
+                    </tr>
+                    <tr>
+                        <th scope="col" style="width:30%;">Gustavo Santos</th>
+                        <th scope="col" style="width:25%;">gustavo085@gmail.com</th>
+                        <th scope="col" style="width:20%;">(11)2758-1758</th>
+                        <th scope="col" style="width:25%;">Alagoas</th>
+                    </tr>
+                    <tr>
+                        <th scope="col" style="width:30%;">Matheus Moura</th>
+                        <th scope="col" style="width:25%;">MatheusMoura@outlook.com</th>
+                        <th scope="col" style="width:20%;">(11)98724-6674</th>
+                        <th scope="col" style="width:25%;">Piauí</th>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</body>
+</html>
+</body>

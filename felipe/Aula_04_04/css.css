@@ -1,0 +1,31 @@
+h1 {
+    border-bottom: solid 1px gray;
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+}
+
+a {
+    padding-right: 1%;
+}
+
+.contein {
+    padding-left: 1%;
+}
+
+.botoes {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.primo {
+    border: green solid 2px;
+    background-color: lightgreen;
+    padding: 5px;
+
+}
+
+.no {
+    border: red solid 2px;
+    background-color: lightcoral;
+    padding: 5px;
+}
